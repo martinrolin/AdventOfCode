@@ -13,7 +13,7 @@ namespace AdventOfCode
         static void Main(string[] args)
         {
 
-            Console.WindowHeight = 50;            
+            Console.WindowHeight = 40;            
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("[Advent of code]" + Environment.NewLine );
 
