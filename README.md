@@ -1,4 +1,4 @@
 # AdventOfCode
-Advent of Code
+Solutions
 
-Solutions for Advent of Code
+C#, javascript
