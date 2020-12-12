@@ -70,44 +70,6 @@ namespace AdventOfCode._2020
                 }                
             }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             part1 = Math.Abs(x) + Math.Abs(y);
 
             // Part 2
