@@ -102,14 +102,14 @@ namespace AdventOfCode._2020
                 {
                     for (int i = 0; i < Int32.Parse(line.Substring(1)) / 90; i++) 
                     {
-                        RotateWayPoint(true);
+                        (waypointX, waypointY) = (-waypointY, waypointX);
                     }
                 }
                 else if (line[0] == 'R')
                 {
                     for (int i = 0; i < Int32.Parse(line.Substring(1)) / 90; i++)
                     {
-                        RotateWayPoint(false);
+                        (waypointX, waypointY) = (waypointY, -waypointX);
                     }
                 }
             }
@@ -117,22 +117,6 @@ namespace AdventOfCode._2020
 
 
             WriteResult(12, part1, part2, result.silver);
-        }
-
-        private void RotateWayPoint(bool left) {
-            if (left)
-            {
-                var PreviousWaypointY = waypointY;
-
-                waypointY = waypointX;
-                waypointX = -PreviousWaypointY;
-            }   
-            else {
-                var PreviousWaypointX = waypointX;
-
-                waypointX = waypointY;
-                waypointY = -PreviousWaypointX;
-            }
         }
 
         private void Move(int length) {
