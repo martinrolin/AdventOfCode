@@ -1,5 +1,4 @@
-﻿using ExtendedArithmetic;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -35,8 +34,8 @@ namespace AdventOfCode._2020
 
 
             // Part 2
-            var N = new List<BigInteger>();
-            var A = new List<BigInteger>();
+            var N = new List<long>();
+            var A = new List<long>();
             var NA = new Dictionary<long,long>();
             var offset = 0;
             var max = 0;
@@ -44,8 +43,8 @@ namespace AdventOfCode._2020
             {
                 if (arr[i] != "x")
                 {
-                    N.Add(new BigInteger(Int32.Parse(arr[i])));
-                    A.Add(new BigInteger(Int32.Parse(arr[i]) - offset));
+                    N.Add(Int32.Parse(arr[i]));
+                    A.Add(Int32.Parse(arr[i]) - offset);
                     NA.Add(Int32.Parse(arr[i]), (Int32.Parse(arr[i]) - (offset % Int32.Parse(arr[i]))) % Int32.Parse(arr[i]));
 
                     max = Math.Max(Int32.Parse(arr[i]), max);
@@ -53,7 +52,8 @@ namespace AdventOfCode._2020
                 offset++;
             }
 
-            part2 = (long)Polynomial.Algorithms.ChineseRemainderTheorem(N.ToArray(), A.ToArray());
+            part2 = Algorithms.ChineseRemainderTheorem(N.ToArray(), A.ToArray());
+
 
             WriteResult(13, part1, part2, result.gold);
 
@@ -89,6 +89,8 @@ namespace AdventOfCode._2020
                    
             }
         }
+
+        
     }
 
 

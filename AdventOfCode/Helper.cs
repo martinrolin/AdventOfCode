@@ -46,5 +46,6 @@ namespace AdventOfCode
             }
             Console.WriteLine("");
         }
+
     }
 }

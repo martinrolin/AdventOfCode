@@ -6,8 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtendedArithmetic.Polynomial" Version="2.1.0" />
-    <PackageReference Include="Open.Numeric.Primes" Version="2.0.0" />
     <PackageReference Include="QuickGraph" Version="3.6.61119.7" />
   </ItemGroup>
 
