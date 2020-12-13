@@ -52,7 +52,7 @@ namespace AdventOfCode._2020
                 offset++;
             }
 
-            part2 = Algorithms.ChineseRemainderTheorem(N.ToArray(), A.ToArray());
+            part2 = ChineseRemainderTheorem.Solve(N.ToArray(), A.ToArray());
 
 
             WriteResult(13, part1, part2, result.gold);

@@ -5,10 +5,10 @@ using System.Text;
 
 namespace AdventOfCode
 {
-    class Algorithms
+    class ChineseRemainderTheorem
     {
 
-        static public long ChineseRemainderTheorem(long[] n, long[] a)
+        static public long Solve(long[] n, long[] a)
         {
             long prod = n.Aggregate((long)1, (i, j) => i * j);
             long p;

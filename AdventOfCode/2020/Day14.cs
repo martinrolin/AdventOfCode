@@ -15,6 +15,7 @@ namespace AdventOfCode._2020
             string allText = File.ReadAllText("input\\2020_day14.txt");
             var lines = allText.Split("\r\n").ToList();
 
+            var list = Algorithms.PrimeDecomposition.GetPrimes(423);
             WriteResult(14, part1, part2, result.none);
 
         }
