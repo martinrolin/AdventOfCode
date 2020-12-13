@@ -1,7 +1,9 @@
-﻿using System;
+﻿using ExtendedArithmetic;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 
 namespace AdventOfCode._2020
@@ -10,11 +12,85 @@ namespace AdventOfCode._2020
     {
         public void Solve()
         {
-            int part1 = 0;
+            int part1 = Int32.MaxValue;
             long part2 = 0;
             string allText = File.ReadAllText("input\\2020_day13.txt");
             var lines = allText.Split("\r\n").ToList();
-            WriteResult(13, part1, part2, result.none);
+
+
+            var value = Int32.Parse(lines[0]);
+            var arr = lines[1].Split(",");
+            var mintime = Int32.MaxValue;
+            // Part 1
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == "x")
+                    continue;
+
+                if (Int32.Parse(arr[i]) * (int)Math.Ceiling(value / (double)Int32.Parse(arr[i])) < mintime) {
+                    mintime = Int32.Parse(arr[i]) * (int)Math.Ceiling(value / (double)Int32.Parse(arr[i]));
+                    part1 = (Int32.Parse(arr[i]) * (int)Math.Ceiling(value / (double)Int32.Parse(arr[i])) - value) * Int32.Parse(arr[i]);
+                }               
+            }
+
+
+            // Part 2
+            var N = new List<BigInteger>();
+            var A = new List<BigInteger>();
+            var NA = new Dictionary<long,long>();
+            var offset = 0;
+            var max = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] != "x")
+                {
+                    N.Add(new BigInteger(Int32.Parse(arr[i])));
+                    A.Add(new BigInteger(Int32.Parse(arr[i]) - offset));
+                    NA.Add(Int32.Parse(arr[i]), (Int32.Parse(arr[i]) - (offset % Int32.Parse(arr[i]))) % Int32.Parse(arr[i]));
+
+                    max = Math.Max(Int32.Parse(arr[i]), max);
+                }
+                offset++;
+            }
+
+            part2 = (long)Polynomial.Algorithms.ChineseRemainderTheorem(N.ToArray(), A.ToArray());
+
+            WriteResult(13, part1, part2, result.gold);
+
+            // Slow part 2
+            return;
+            long startTime = max * (long)(100000000000000 / max) + NA[max];
+            long t;
+            var found = false;
+
+            long count = 0;
+            while (!found)
+            {
+                t = startTime;
+                part2 = startTime;
+
+                var allfound = true;
+                foreach (var item in NA.Keys)
+                {
+                    if (t % item != NA[item])
+                    {
+                        startTime += max;
+                        count += max;
+                        allfound = false;
+                        break;
+                    }
+
+                }
+
+                if (allfound)
+                {
+                    found = true;                    
+                }
+                   
+            }
         }
     }
+
+
+
 }

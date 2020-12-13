@@ -7,7 +7,7 @@ using System.Text;
 namespace AdventOfCode._2020
 {
     class Day12 : Helper
-    {
+    {        
         private enum Direction
         {
             east,
@@ -116,7 +116,7 @@ namespace AdventOfCode._2020
             part2 = Math.Abs(x) + Math.Abs(y);
 
 
-            WriteResult(12, part1, part2, result.silver);
+            WriteResult(12, part1, part2, result.gold);
         }
 
         private void Move(int length) {
