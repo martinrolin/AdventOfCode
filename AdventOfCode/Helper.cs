@@ -38,7 +38,7 @@ namespace AdventOfCode
             }
             if (part2 != null)
             {
-                for (int x = 0; x < 9 - (part1 != null ? part1.ToString() : "").Length; x++)
+                for (int x = 0; x < 16 - (part1 != null ? part1.ToString() : "").Length; x++)
                 {
                     Console.Write(" ");
                 }

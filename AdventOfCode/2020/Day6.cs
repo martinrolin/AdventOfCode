@@ -12,7 +12,7 @@ namespace AdventOfCode._2020
         {
             int part1 = 0;
             int part2 = 0;
-            string input = File.ReadAllText("input\\2020_day6.txt");
+            string input = File.ReadAllText("Input\\2020\\day6.txt");
             var inputList = input.Split("\r\n\r\n").ToList();
 
             //Part  1

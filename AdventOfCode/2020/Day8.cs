@@ -12,7 +12,7 @@ namespace AdventOfCode._2020
         {
             int part1 = 0;
             int part2 = 0;
-            string allText = File.ReadAllText("input\\2020_day8.txt");
+            string allText = File.ReadAllText("Input\\2020\\day8.txt");
             var lines = allText.Split("\r\n").ToList();
             var visited = new List<int>();
             var line = 0;

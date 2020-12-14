@@ -13,7 +13,7 @@ namespace AdventOfCode._2020
         {
             int part1 = 0;
             int part2 = 0;
-            string allText = File.ReadAllText("input\\2020_day4.txt");
+            string allText = File.ReadAllText("Input\\2020\\day4.txt");
             var listOfValues = allText.Split("\r\n\r\n").ToList();
 
             int NumberOfValidPassports = 0;

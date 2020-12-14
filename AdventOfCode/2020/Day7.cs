@@ -14,7 +14,7 @@ namespace AdventOfCode._2020
         {
             int part1 = 0;
             int part2 = 0;
-            string allText = File.ReadAllText("input\\2020_day7.txt");
+            string allText = File.ReadAllText("Input\\2020\\day7.txt");
             allText = allText.Replace("bags", "bag");
             var listOfValues = allText.Split("\r\n").ToList();
 

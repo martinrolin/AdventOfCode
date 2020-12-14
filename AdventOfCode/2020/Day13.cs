@@ -13,7 +13,7 @@ namespace AdventOfCode._2020
         {
             int part1 = Int32.MaxValue;
             long part2 = 0;
-            string allText = File.ReadAllText("input\\2020_day13.txt");
+            string allText = File.ReadAllText("Input\\2020\\day13.txt");
             var lines = allText.Split("\r\n").ToList();
 
 

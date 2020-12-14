@@ -25,7 +25,7 @@ namespace AdventOfCode._2020
         {
             int part1 = 0;
             long part2 = 0;
-            string allText = File.ReadAllText("input\\2020_day12.txt");
+            string allText = File.ReadAllText("Input\\2020\\day12.txt");
             var lines = allText.Split("\r\n").ToList();
 
             // Part 1

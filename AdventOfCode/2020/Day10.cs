@@ -27,7 +27,7 @@ namespace AdventOfCode._2020
         {
             int part1 = 0;
             long part2 = 0;
-            string allText = File.ReadAllText("input\\2020_day10.txt");
+            string allText = File.ReadAllText("Input\\2020\\day10.txt");
             var lines = allText.Split("\r\n").Select(l => Int32.Parse(l)).ToList();
             var NumberOfDifferences = new Dictionary<int, int>();
             NumberOfDifferences.Add(1, 0);

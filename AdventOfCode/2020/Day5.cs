@@ -13,7 +13,7 @@ namespace AdventOfCode._2020
         {
             int part1 = 0;
             int part2 = 0;
-            string allText = File.ReadAllText("input\\2020_day5.txt");
+            string allText = File.ReadAllText("Input\\2020\\day5.txt");
             var listOfValues = allText.Split("\r\n").ToList();
 
             Debug.Assert(NumberFromCode('B', "BFFFBBFRRR".Substring(0, 7)) * 8 + NumberFromCode('R', "BFFFBBFRRR".Substring(7, 3)) == 567);

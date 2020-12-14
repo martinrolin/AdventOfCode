@@ -12,7 +12,7 @@ namespace AdventOfCode._2020
         {
             long part1 = 0;
             long part2 = 0;
-            string allText = File.ReadAllText("input\\2020_day3.txt");
+            string allText = File.ReadAllText("Input\\2020\\day3.txt");
             var listOfValues = allText.Split("\r\n").ToList();
 
             part1 = CountTrees(1, 3, listOfValues);

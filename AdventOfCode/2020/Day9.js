@@ -1,7 +1,7 @@
 const fs = require('fs');
 var data;
 try {
-  data = fs.readFileSync('input\\2020_day9.txt', 'utf8')
+  data = fs.readFileSync('Input\\2020\\day9.txt', 'utf8')
 } catch (err) {
   console.error(err)
 }
@@ -27,7 +27,7 @@ for ([i,value] of input_array.entries()){
 
 var data;
 try {
-  data = fs.readFileSync('input\\2020_day9.txt', 'utf8')
+  data = fs.readFileSync('Input\\2020\\day9.txt', 'utf8')
 } catch (err) {
   console.error(err)
 }

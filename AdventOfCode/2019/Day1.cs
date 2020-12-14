@@ -12,7 +12,7 @@ namespace AdventOfCode._2019
         {
             int part1 = 0;
             int part2 = 0;
-            string allText = File.ReadAllText("input\\2019_day1.txt");
+            string allText = File.ReadAllText("Input\\2019\\day1.txt");
             var listOfValues = allText.Split("\r\n").ToList();
 
 

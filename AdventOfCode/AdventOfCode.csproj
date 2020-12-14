@@ -10,52 +10,55 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="input\2015_day1.txt">
+    <None Update="Input\2015\day1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2019_day1.txt">
+    <None Update="Input\2019\day1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day1.txt">
+    <None Update="Input\2020\day1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day10.txt">
+    <None Update="Input\2020\day10.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day11.txt">
+    <None Update="Input\2020\day11.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day12.txt">
+    <None Update="Input\2020\day12.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day13.txt">
+    <None Update="Input\2020\day13.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day14.txt">
+    <None Update="Input\2020\day14.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day2.txt">
+    <None Update="Input\2020\day15.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day3.txt">
+    <None Update="Input\2020\day2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day4.txt">
+    <None Update="Input\2020\day3.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day5.txt">
+    <None Update="Input\2020\day4.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day6.txt">
+    <None Update="Input\2020\day5.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day7.txt">
+    <None Update="Input\2020\day6.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day8.txt">
+    <None Update="Input\2020\day7.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="input\2020_day9.txt">
+    <None Update="Input\2020\day8.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Input\2020\day9.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
