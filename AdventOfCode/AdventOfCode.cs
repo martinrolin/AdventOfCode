@@ -21,6 +21,12 @@ namespace AdventOfCode
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(Environment.NewLine + "[2020]");
             Console.ForegroundColor = ConsoleColor.White;
+            new _2020.Day25().Solve();
+            new _2020.Day24().Solve();
+            new _2020.Day23().Solve();
+            new _2020.Day22().Solve();
+            new _2020.Day21().Solve();
+            new _2020.Day20().Solve();
             new _2020.Day19().Solve();
             new _2020.Day18().Solve();
             new _2020.Day17().Solve();
