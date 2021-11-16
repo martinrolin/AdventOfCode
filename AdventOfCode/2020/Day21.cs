@@ -51,7 +51,7 @@ namespace AdventOfCode._2020
             part1 = foods.Sum(f => f.ingredients.Count(i => !allergenToIngredient.Values.Contains(i)));
             part2 = string.Join(",", allergenToIngredient.Keys.OrderBy(a => a).Select(k => allergenToIngredient[k]));
             
-            WriteResultStringValues(21, part1.ToString(), part2, result.silver);
+            WriteResultStringValues(21, part1.ToString(), part2, result.gold);
         }
     }
 }
