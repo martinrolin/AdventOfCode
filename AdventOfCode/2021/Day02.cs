@@ -15,21 +15,32 @@ namespace AdventOfCode._2021
             string allText = File.ReadAllText("Input\\2021\\day02.txt");
             var listOfValues = allText.Split("\r\n").ToList();
 
-            for (int i = 1; i < listOfValues.Count - 1; i++)
+            int distance = 0;
+            int depthPartOne = 0;
+            int depthPartTwo = 0;
+            int aim = 0;
+
+            for (int i = 0; i < listOfValues.Count - 1; i++)
             {
-                if (Int32.Parse(listOfValues[i]) > Int32.Parse(listOfValues[i - 1]))
-                    part1++;
+                if (listOfValues[i].Contains("forward")) {
+                    distance += Int32.Parse(listOfValues[i].Replace("forward ", ""));
+                    depthPartTwo += aim * Int32.Parse(listOfValues[i].Replace("forward ", ""));
+                } 
+                else if (listOfValues[i].Contains("down"))
+                {
+                    depthPartOne += Int32.Parse(listOfValues[i].Replace("down ", ""));
+                    aim += Int32.Parse(listOfValues[i].Replace("down ", ""));
+                } else if (listOfValues[i].Contains("up"))
+                {
+                    depthPartOne -= Int32.Parse(listOfValues[i].Replace("up ", ""));
+                    aim -= Int32.Parse(listOfValues[i].Replace("up ", ""));
+                }                
             }
 
-            for (int i = 2; i < listOfValues.Count - 2; i++)
-            {
-                int a = Int32.Parse(listOfValues[i - 2]) + Int32.Parse(listOfValues[i - 1]) + Int32.Parse(listOfValues[i]);
-                int b = Int32.Parse(listOfValues[i - 1]) + Int32.Parse(listOfValues[i]) + Int32.Parse(listOfValues[i + 1]);
-                if (b > a)
-                    part2++;
-            }
+            part1 = distance * depthPartOne;
+            part2 = distance * depthPartTwo;
 
-            WriteResult(1, part1, part2, result.none);
+            WriteResult(1, part1, part2, result.gold);
 
         }
     }
