@@ -24,7 +24,11 @@ namespace AdventOfCode
             new _2021.Day01().Solve();
             new _2021.Day02().Solve();
             new _2021.Day03().Solve();
-            
+            new _2021.Day04().Solve();
+            new _2021.Day05().Solve();
+            new _2021.Day06().Solve();
+
+
             Console.ReadLine();
             return;
 
