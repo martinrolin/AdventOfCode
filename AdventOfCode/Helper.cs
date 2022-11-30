@@ -36,7 +36,7 @@ namespace AdventOfCode
             {
                 Console.Write("\t1 = {0}", part1);
             }
-            if (part2 != null)
+            if (part2 != null && part2 != 0)
             {
                 for (int x = 0; x < 16 - (part1 != null ? part1.ToString() : "").Length; x++)
                 {
