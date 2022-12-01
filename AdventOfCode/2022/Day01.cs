@@ -10,13 +10,48 @@ namespace AdventOfCode._2022
     {
         public void Solve()
         {
-            int part1 = 0;
-            int part2 = 0;
+            long part1 = 0;
+            long part2 = 0;
             string allText = File.ReadAllText("Input\\2022\\day01.txt");
             var listOfValues = allText.Split("\r\n").ToList();
 
-            
-            WriteResult(1, part1, part2, result.none);
+            long sum = 0;
+            for (int i = 0; i < listOfValues.Count; i++)
+            {
+                if (listOfValues[i] != "")
+                    sum += int.Parse(listOfValues[i]);
+
+                if (listOfValues[i] == "" || i == listOfValues.Count - 1)
+                {
+                    if (sum > part1)
+                        part1 = sum;
+
+                    sum = 0;
+                }
+            }
+
+            List<long> sums = new List<long>{ 0,0,0};
+
+            for (int i = 0; i < listOfValues.Count; i++)
+            {
+                if (listOfValues[i] != "")
+                    sum += int.Parse(listOfValues[i]);
+
+                if (listOfValues[i] == "" || i == listOfValues.Count - 1)
+                {
+                    if (sum > sums[0])
+                    {
+                        sums[0] = sum;
+                        sums.Sort();
+                    }
+
+                    sum = 0;
+                }
+            }
+
+            part2 = sums.Sum();
+
+            WriteResult(1, part1, part2, result.gold);
 
         }
     }
