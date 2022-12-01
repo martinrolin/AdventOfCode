@@ -15,6 +15,7 @@ namespace AdventOfCode._2022
             string allText = File.ReadAllText("Input\\2022\\day01.txt");
             var listOfValues = allText.Split("\r\n").ToList();
 
+            List<long> sums = new List<long>();
             long sum = 0;
             for (int i = 0; i < listOfValues.Count; i++)
             {
@@ -23,33 +24,15 @@ namespace AdventOfCode._2022
 
                 if (listOfValues[i] == "" || i == listOfValues.Count - 1)
                 {
-                    if (sum > part1)
-                        part1 = sum;
-
+                    sums.Add(sum);
                     sum = 0;
                 }
             }
 
-            List<long> sums = new List<long>{ 0,0,0};
-
-            for (int i = 0; i < listOfValues.Count; i++)
-            {
-                if (listOfValues[i] != "")
-                    sum += int.Parse(listOfValues[i]);
-
-                if (listOfValues[i] == "" || i == listOfValues.Count - 1)
-                {
-                    if (sum > sums[0])
-                    {
-                        sums[0] = sum;
-                        sums.Sort();
-                    }
-
-                    sum = 0;
-                }
-            }
-
-            part2 = sums.Sum();
+            sums.Sort();
+            part1 = sums.Last();
+            sums.Reverse();
+            part2 = sums.Take(3).Sum();
 
             WriteResult(1, part1, part2, result.gold);
 
