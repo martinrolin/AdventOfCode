@@ -6,22 +6,22 @@ namespace AdventOfCode
 {
     class Helper
     {
-        protected enum result
+        protected enum Result
         {
             none,
             silver,
             gold
         }
 
-        protected void WriteResult(int day, long? part1, long? part2, result state)
+        protected void WriteResult(int day, long? part1, long? part2, Result state)
         {
-            if (state == result.gold)
+            if (state == Result.gold)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write("* ");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            else if (state == result.silver)
+            else if (state == Result.silver)
             {
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write("* ");
@@ -47,15 +47,15 @@ namespace AdventOfCode
             Console.WriteLine("");
         }
 
-        protected void WriteResultStringValues(int day, string part1, string part2, result state)
+        protected void WriteResultStringValues(int day, string part1, string part2, Result state)
         {
-            if (state == result.gold)
+            if (state == Result.gold)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write("* ");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            else if (state == result.silver)
+            else if (state == Result.silver)
             {
                 Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write("* ");

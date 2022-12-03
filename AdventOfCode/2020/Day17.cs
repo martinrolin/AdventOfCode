@@ -45,7 +45,7 @@ namespace AdventOfCode._2020
             }
             part2 = CountActive();
 
-            WriteResult(17, part1, part2, result.gold);
+            WriteResult(17, part1, part2, Result.gold);
         }
 
         private void NextCycle(int cycle, bool part2 = false) {

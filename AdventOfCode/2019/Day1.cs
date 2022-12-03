@@ -10,8 +10,7 @@ namespace AdventOfCode._2019
     {
         public void Solve()
         {
-            int part1 = 0;
-            int part2 = 0;
+            int part1 = 0;          
             string allText = File.ReadAllText("Input\\2019\\day1.txt");
             var listOfValues = allText.Split("\r\n").ToList();
 
@@ -23,7 +22,7 @@ namespace AdventOfCode._2019
                 part1 += val;
 
             }
-            WriteResult(1, part1, null, result.silver);
+            WriteResult(1, part1, null, Result.silver);
 
         }
     }

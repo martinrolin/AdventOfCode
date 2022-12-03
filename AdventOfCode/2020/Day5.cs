@@ -38,7 +38,7 @@ namespace AdventOfCode._2020
                     break;
                 }
             }
-            WriteResult(5, part1, part2, result.gold);
+            WriteResult(5, part1, part2, Result.gold);
         }
 
 

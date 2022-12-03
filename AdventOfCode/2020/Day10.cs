@@ -8,20 +8,20 @@ namespace AdventOfCode._2020
 {
     class Day10 :Helper
     {
-        private class node
+        private class Node
         {
-            public node(int v)
+            public Node(int v)
             {
                 value = v;
-                children = new List<node>();
+                children = new List<Node>();
                 paths = 0;
             }
             public int value { get; set; }
             public long paths { get; set; }
-            public List<node> children { get; set; }
+            public List<Node> children { get; set; }
         }
 
-        Dictionary<int, node> nodes = new Dictionary<int, node>();
+        Dictionary<int, Node> nodes = new Dictionary<int, Node>();
 
         public void Solve()
         {
@@ -36,10 +36,10 @@ namespace AdventOfCode._2020
             var sorted = lines.OrderBy(l => l).ToArray<int>();
             var current = 0;
 
-            nodes.Add(0, new node(0));
+            nodes.Add(0, new Node(0));
             foreach (var x in sorted)
             {
-                nodes.Add(x, new node(x));
+                nodes.Add(x, new Node(x));
                 NumberOfDifferences[x - current] = NumberOfDifferences[x - current] + 1;
                 current = x;
             }
@@ -50,10 +50,10 @@ namespace AdventOfCode._2020
             Traverse(sorted.Last<int>(), nodes[0]);
 
             part2 = nodes[0].paths;
-            WriteResult(10, part1, part2, result.gold);
+            WriteResult(10, part1, part2, Result.gold);
         }
 
-        private static void Traverse(int max, node n)
+        private static void Traverse(int max, Node n)
         {
             if (n.value == max)
             {
@@ -67,7 +67,7 @@ namespace AdventOfCode._2020
             n.paths = n.children.Sum(x => x.paths);
         }
 
-        private void FillDictionary(int[] sorted, node n)
+        private void FillDictionary(int[] sorted, Node n)
         {
             if (n.value == sorted[^1])
                 return;

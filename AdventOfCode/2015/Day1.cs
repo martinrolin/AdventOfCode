@@ -36,7 +36,7 @@ namespace AdventOfCode._2015
                 }
             }
 
-            WriteResult(1, part1, part2, result.gold);
+            WriteResult(1, part1, part2, Result.gold);
 
         }
     }

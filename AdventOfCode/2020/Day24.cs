@@ -78,7 +78,7 @@ namespace AdventOfCode._2020
             Step();
             }
             part2 = map.Sum(x => x.Value ? 1 : 0);
-            WriteResult(24, part1, part2, result.gold);
+            WriteResult(24, part1, part2, Result.gold);
         }
 
         private void Step()

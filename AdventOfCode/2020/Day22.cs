@@ -31,7 +31,7 @@ namespace AdventOfCode._2020
             part1 = PlayCombat(new Queue<int>(playersStartSetup[0]), new Queue<int>(playersStartSetup[1]));            
             PlayRecursionCombat(1, new Queue<int>(playersStartSetup[0]), new Queue<int>(playersStartSetup[1]));
           
-            WriteResult(22, part1, part2, result.gold);
+            WriteResult(22, part1, part2, Result.gold);
         }
 
         private int PlayRecursionCombat(int game, Queue<int> player1, Queue<int> player2)

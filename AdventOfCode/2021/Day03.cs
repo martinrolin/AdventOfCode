@@ -91,7 +91,7 @@ namespace AdventOfCode._2021
             }
             part2 = Convert.ToInt32(oxygenList.FirstOrDefault(), 2) * Convert.ToInt32(co2ScrubberList.FirstOrDefault(), 2);
             
-            WriteResult(3, part1, part2, result.gold);
+            WriteResult(3, part1, part2, Result.gold);
         }
     }
 }

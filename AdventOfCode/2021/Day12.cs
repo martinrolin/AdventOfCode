@@ -63,7 +63,7 @@ namespace AdventOfCode._2021
             part1 = VisitCave("start", ImmutableHashSet.Create("start"), false, false);
             part2 = VisitCave("start", ImmutableHashSet.Create("start"), false, true);
 
-            WriteResult(12, part1, part2, result.gold);
+            WriteResult(12, part1, part2, Result.gold);
         }
     }
 }

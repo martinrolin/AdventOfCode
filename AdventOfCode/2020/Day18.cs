@@ -22,7 +22,7 @@ namespace AdventOfCode._2020
                 part2 += Int64.Parse(Calc(line,true));
             }
 
-            WriteResult(18, part1, part2, result.gold);
+            WriteResult(18, part1, part2, Result.gold);
         }
 
         private string Calc(string equation, bool part2 = false) {

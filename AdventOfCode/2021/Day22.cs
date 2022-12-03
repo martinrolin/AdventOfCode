@@ -50,12 +50,7 @@ namespace AdventOfCode._2021
             var lines = allText.Split("\r\n").ToList<string>();
             commands = new List<bool>();
             dimensions = new List<(int, int, int, int, int, int)>();
-            int minX = Int32.MaxValue;
-            int maxX = Int32.MinValue;
-            int minY = Int32.MaxValue;
-            int maxY = Int32.MinValue;
-            int minZ = Int32.MaxValue;
-            int maxZ = Int32.MinValue;
+
             for (int i = 0; i < lines.Count; i++)
             {
                 commands.Add(lines[i].Contains("on"));
@@ -81,7 +76,7 @@ namespace AdventOfCode._2021
             //part1 = Part1();
 
 
-            WriteResult(22, part1, part2, result.none);
+            WriteResult(22, part1, part2, Result.none);
         }
     }
 }

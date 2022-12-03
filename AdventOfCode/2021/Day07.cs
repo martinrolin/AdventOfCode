@@ -43,7 +43,7 @@ namespace AdventOfCode._2021
             part1 = CalculateFuel(values, true);
             part2 = CalculateFuel(values, false);
 
-            WriteResult(7, part1, part2, result.gold);
+            WriteResult(7, part1, part2, Result.gold);
         }
     }
 }

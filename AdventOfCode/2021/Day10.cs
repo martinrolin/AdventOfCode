@@ -79,7 +79,7 @@ namespace AdventOfCode._2021
             scores.Sort();
             part2 = scores[scores.Count / 2];
 
-            WriteResult(10, part1, part2, result.gold);
+            WriteResult(10, part1, part2, Result.gold);
         }
     }
 }

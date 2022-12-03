@@ -20,7 +20,7 @@ namespace AdventOfCode._2020
 
             long p2 = CountTrees(1, 1, listOfValues) * CountTrees(1, 3, listOfValues) * CountTrees(1, 5, listOfValues) * CountTrees(1, 7, listOfValues) * CountTrees(2, 1, listOfValues);
             part2 = p2;
-            WriteResult(3, part1, part2, result.gold);
+            WriteResult(3, part1, part2, Result.gold);
         }
 
         private long CountTrees(int down, int side, List<String> map)

@@ -103,7 +103,7 @@ namespace AdventOfCode._2021
             part2 = FindOverlaps(vectors, true);
 
 
-            WriteResult(5, part1, part2, result.gold);
+            WriteResult(5, part1, part2, Result.gold);
         }
     }
 }

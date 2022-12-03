@@ -40,7 +40,7 @@ namespace AdventOfCode._2021
             part1 = distance * depthPartOne;
             part2 = distance * depthPartTwo;
 
-            WriteResult(2, part1, part2, result.gold);
+            WriteResult(2, part1, part2, Result.gold);
 
         }
     }

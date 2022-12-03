@@ -106,7 +106,7 @@ namespace AdventOfCode._2020
             part2 = JigsawToString().Where(x => x == '#').Count()- 15*numberOfMonsters;
 
 
-            WriteResult(20, part1, part2, result.gold);
+            WriteResult(20, part1, part2, Result.gold);
         }
 
         private string JigsawToString()

@@ -55,39 +55,39 @@ namespace AdventOfCode._2020
             part2 = ChineseRemainderTheorem.Solve(N.ToArray(), A.ToArray());
 
 
-            WriteResult(13, part1, part2, result.gold);
+            WriteResult(13, part1, part2, Result.gold);
 
             // Slow part 2
             return;
-            long startTime = max * (long)(100000000000000 / max) + NA[max];
-            long t;
-            var found = false;
+            //long startTime = max * (long)(100000000000000 / max) + NA[max];
+            //long t;
+            //var found = false;
 
-            long count = 0;
-            while (!found)
-            {
-                t = startTime;
-                part2 = startTime;
+            //long count = 0;
+            //while (!found)
+            //{
+            //    t = startTime;
+            //    part2 = startTime;
 
-                var allfound = true;
-                foreach (var item in NA.Keys)
-                {
-                    if (t % item != NA[item])
-                    {
-                        startTime += max;
-                        count += max;
-                        allfound = false;
-                        break;
-                    }
+            //    var allfound = true;
+            //    foreach (var item in NA.Keys)
+            //    {
+            //        if (t % item != NA[item])
+            //        {
+            //            startTime += max;
+            //            count += max;
+            //            allfound = false;
+            //            break;
+            //        }
 
-                }
+            //    }
 
-                if (allfound)
-                {
-                    found = true;                    
-                }
+            //    if (allfound)
+            //    {
+            //        found = true;                    
+            //    }
                    
-            }
+            //}
         }
 
         

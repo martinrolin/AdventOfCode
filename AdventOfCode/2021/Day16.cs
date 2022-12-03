@@ -112,7 +112,7 @@ namespace AdventOfCode._2021
 
 				(part1, part2) = Day166(lines);
 
-				WriteResult(16, part1, part2, result.gold);
+				WriteResult(16, part1, part2, Result.gold);
 			}
 		}
 	}
