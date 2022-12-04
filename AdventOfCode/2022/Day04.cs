@@ -15,10 +15,22 @@ namespace AdventOfCode._2022
             long part1 = 0;
             long part2 = 0;
             string allText = File.ReadAllText("Input\\2022\\day04.txt");
-            var listOfValues = allText.Split("\r\n").ToList();
+            var lines = allText.Split("\r\n").ToList();
+
+            foreach (var line in lines)
+            {
+                var val = line.Split(new char[] { '-', ',' }).Select(x => int.Parse(x)).ToList();
+
+                if ((val[0] <= val[2] && val[1] >= val[3]) || (val[0] >= val[2] && val[1] <= val[3]))
+                    part1++;
+
+                if ((val[0] >= val[2] && val[0] <= val[3]) || (val[1] >= val[2] && val[1] <= val[3]) || (val[2] >= val[0] && val[2] <= val[1]) || (val[3] >= val[0] && val[3] <= val[1]))
+                    part2++;
+
+            }
 
 
-            WriteResult(4, part1, part2, Result.none);
+            WriteResult(4, part1, part2, Result.gold);
 
         }
     }
