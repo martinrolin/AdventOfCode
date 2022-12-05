@@ -6,7 +6,7 @@ using System.Text;
 
 namespace AdventOfCode._2015
 {
-    class Day1 : Helper
+    class Day01 : Helper
     {
         public void Solve()
         {
