@@ -26,7 +26,10 @@ namespace AdventOfCode
             new _2022.Day04().Solve();
             new _2022.Day03().Solve();
             new _2022.Day02().Solve();
-            new _2022.Day01().Solve();            
+            new _2022.Day01().Solve();
+
+            new _2015.Day05().Solve();
+            
 
             Console.ReadLine();
             return;
@@ -89,6 +92,8 @@ namespace AdventOfCode
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(Environment.NewLine + "[2015]");
             Console.ForegroundColor = ConsoleColor.White;
+            new _2015.Day04().Solve();
+            new _2015.Day03().Solve();
             new _2015.Day02().Solve();
             new _2015.Day01().Solve();
 

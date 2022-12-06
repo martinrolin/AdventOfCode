@@ -14,10 +14,43 @@ namespace AdventOfCode._2022
         {
             long part1 = 0;
             long part2 = 0;
-            string allText = File.ReadAllText("Input\\2022\\day06.txt");
-            var lines = allText.Split("\r\n").ToList();
+            string code = File.ReadAllText("Input\\2022\\day06.txt");
 
-            WriteResult(6, part1, part2, Result.none);
+            Queue<char> queue = new Queue<char>();
+
+            for (int i = 0; i < code.Length; i++)
+            {
+
+                if(queue.Count== 4)
+                    queue.Dequeue();
+
+                queue.Enqueue(code[i]);
+
+                if (i >= 4 && queue.Count() == queue.Distinct().Count())
+                {
+                    part1 = i + 1;
+                    break;
+                }
+            }
+
+            queue = new Queue<char>();
+
+            for (int i = 0; i < code.Length; i++)
+            {
+
+                if (queue.Count == 14)
+                    queue.Dequeue();
+
+                queue.Enqueue(code[i]);
+
+                if (i >= 14 && queue.Count() == queue.Distinct().Count())
+                {
+                    part2 = i + 1;
+                    break;
+                }
+            }
+
+            WriteResult(6, part1, part2, Result.gold);
 
         }
 

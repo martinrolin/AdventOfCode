@@ -12,7 +12,7 @@ namespace AdventOfCode._2015
         {
             int part1 = 0;
             int part2 = 0;
-            string allText = File.ReadAllText("Input\\2015\\day1.txt");
+            string allText = File.ReadAllText("Input\\2015\\day01.txt");
 
 
 
