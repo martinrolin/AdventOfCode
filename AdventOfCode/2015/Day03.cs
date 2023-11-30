@@ -72,7 +72,7 @@ namespace AdventOfCode._2015
             part2 = houses.Where(x => x.Value == true).Count();
 
 
-            WriteResult(3, part1, part2, Result.gold);
+            WriteResult(3, part1, part2, Result.twoStars);
 
         }
 

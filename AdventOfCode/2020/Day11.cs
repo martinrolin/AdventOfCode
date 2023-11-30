@@ -43,7 +43,7 @@ namespace AdventOfCode._2020
             } while (CountSeats(map) != CountSeats(nextMap));
             part2 = CountSeats(map);
 
-            WriteResult(11, part1, part2, Result.gold);
+            WriteResult(11, part1, part2, Result.twoStars);
         }
 
         private static void Print(char[,] map, bool adjacent)

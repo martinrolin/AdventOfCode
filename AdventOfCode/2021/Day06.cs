@@ -41,7 +41,7 @@ namespace AdventOfCode._2021
             part1 = (int)Simulate(values, 80);
             part2 = Simulate(values, 256);
             
-            WriteResult(6, part1, part2, Result.gold);
+            WriteResult(6, part1, part2, Result.twoStars);
         }
     }
 }

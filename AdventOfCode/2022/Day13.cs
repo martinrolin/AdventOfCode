@@ -74,7 +74,7 @@ namespace AdventOfCode._2022
             part2 = i2 * i6;
 
 
-            WriteResult(13, part1, part2, Result.gold);
+            WriteResult(13, part1, part2, Result.twoStars);
         }
     }
 }

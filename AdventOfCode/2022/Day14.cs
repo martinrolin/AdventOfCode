@@ -215,7 +215,7 @@ namespace AdventOfCode._2022
             
             }
             
-            WriteResult(14, part1, part2, Result.gold);
+            WriteResult(14, part1, part2, Result.twoStars);
         }
     }
 }

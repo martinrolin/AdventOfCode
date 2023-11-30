@@ -168,7 +168,7 @@ namespace AdventOfCode._2022
             inspected.Reverse();
             part2 = (ulong)inspected[0] * (ulong)inspected[1];
 
-            WriteResultStringValues(11, part1.ToString(), part2.ToString(), Result.gold);
+            WriteResultStringValues(11, part1.ToString(), part2.ToString(), Result.twoStars);
         }
     }
 }

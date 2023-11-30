@@ -88,7 +88,7 @@ namespace AdventOfCode._2020
 
             part2 = dict.Sum(d => d.Value);
 
-            WriteResult(14, part1, part2, Result.gold);
+            WriteResult(14, part1, part2, Result.twoStars);
         }
 
         private void UpdateMemory(string memoryAddress, long value) {            

@@ -50,7 +50,7 @@ namespace AdventOfCode._2020
             Traverse(sorted.Last<int>(), nodes[0]);
 
             part2 = nodes[0].paths;
-            WriteResult(10, part1, part2, Result.gold);
+            WriteResult(10, part1, part2, Result.twoStars);
         }
 
         private static void Traverse(int max, Node n)

@@ -17,7 +17,7 @@ namespace AdventOfCode._2022
         {
            
             PriorityQueue<string, int> queue = new PriorityQueue<string, int>();
-
+            
 
             PriorityQueue<(int, int), int> pq = new PriorityQueue<(int, int), int>();
             HashSet<(int, int)> visited = new HashSet<(int, int)>();
@@ -127,7 +127,7 @@ namespace AdventOfCode._2022
                 }                
             }
            
-            WriteResult(12, part1, part2, Result.gold);
+            WriteResult(12, part1, part2, Result.twoStars);
         }
     }
 }

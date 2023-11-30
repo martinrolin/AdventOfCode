@@ -84,7 +84,7 @@ namespace AdventOfCode._2020
                 ll.Add(r.Except(ll).FirstOrDefault());
             }
             
-            WriteResult(16, part1, part2, Result.gold);
+            WriteResult(16, part1, part2, Result.twoStars);
         }
 
         private int TestTicket(string[] values) {

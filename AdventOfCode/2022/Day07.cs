@@ -142,7 +142,7 @@ namespace AdventOfCode._2022
                     part2 = Math.Min(part2, f.Size);
             }
 
-            WriteResult(7, part1, part2, Result.gold);
+            WriteResult(7, part1, part2, Result.twoStars);
         }
     }
 }

@@ -80,7 +80,7 @@ namespace AdventOfCode._2021
             }
 
 
-            WriteResult(17, part1, part2, Result.gold);
+            WriteResult(17, part1, part2, Result.twoStars);
         }
     }
 }

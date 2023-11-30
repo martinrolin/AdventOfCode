@@ -26,7 +26,7 @@ namespace AdventOfCode._2015
                 part2 += 2 * x[0] + 2 * x[1] + x[0] * x[1] * x[2];
             }
 
-            WriteResult(2, part1, part2, Result.gold);
+            WriteResult(2, part1, part2, Result.twoStars);
 
         }
 

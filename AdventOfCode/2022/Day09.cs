@@ -121,7 +121,7 @@ namespace AdventOfCode._2022
             }
             part2 = visited.Values.Count();
 
-            WriteResult(9, part1, part2, Result.gold);
+            WriteResult(9, part1, part2, Result.twoStars);
         }
     }
 }

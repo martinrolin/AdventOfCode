@@ -36,7 +36,7 @@ namespace AdventOfCode._2020
                     part2++;
             }
 
-            WriteResult(19, part1, part2, Result.gold);
+            WriteResult(19, part1, part2, Result.twoStars);
         }
 
         public String GetRulePattern(int rule, bool part2 = false)

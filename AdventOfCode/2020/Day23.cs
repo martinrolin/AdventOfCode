@@ -82,7 +82,7 @@ namespace AdventOfCode._2020
 
             part2 = cups[cups[1].next].value * cups[cups[cups[1].next].next].value;
 
-            WriteResult(23, part1, part2, Result.gold);
+            WriteResult(23, part1, part2, Result.twoStars);
         }
 
         private void CrabCups(int rounds, int max)

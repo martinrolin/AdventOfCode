@@ -50,7 +50,7 @@ namespace AdventOfCode._2022
                 }
             }
 
-            WriteResult(6, part1, part2, Result.gold);
+            WriteResult(6, part1, part2, Result.twoStars);
 
         }
 

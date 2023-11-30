@@ -15,7 +15,7 @@ namespace AdventOfCode._2022
             string allText = File.ReadAllText("Input\\2022\\day05.txt");
             var lines = allText.Split("\r\n").ToList();
 
-            WriteResultStringValues(5, Part1(lines), Part2(lines), Result.gold);
+            WriteResultStringValues(5, Part1(lines), Part2(lines), Result.twoStars);
 
         }
 

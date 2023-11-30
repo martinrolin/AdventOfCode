@@ -29,7 +29,7 @@ namespace AdventOfCode._2021
                     part2++;
             }
             
-            WriteResult(1, part1, part2, Result.gold);
+            WriteResult(1, part1, part2, Result.twoStars);
 
         }    
     }

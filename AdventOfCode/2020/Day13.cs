@@ -55,7 +55,7 @@ namespace AdventOfCode._2020
             part2 = ChineseRemainderTheorem.Solve(N.ToArray(), A.ToArray());
 
 
-            WriteResult(13, part1, part2, Result.gold);
+            WriteResult(13, part1, part2, Result.twoStars);
 
             // Slow part 2
             return;

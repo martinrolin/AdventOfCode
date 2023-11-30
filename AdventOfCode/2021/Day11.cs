@@ -88,7 +88,7 @@ namespace AdventOfCode._2021
             part1 = Simulate(octopus,100);
             part2 = 100+Simulate(octopus,Int32.MaxValue);
 
-            WriteResult(11, part1, part2, Result.gold);
+            WriteResult(11, part1, part2, Result.twoStars);
         }
     }
 }

@@ -94,7 +94,7 @@ namespace AdventOfCode._2021
             sizeOfBasins.Reverse();
             part2 = sizeOfBasins.Take(3).Aggregate(1, (x, y) => x * y);
 
-            WriteResult(9, part1, part2, Result.gold);
+            WriteResult(9, part1, part2, Result.twoStars);
         }
     }
 }

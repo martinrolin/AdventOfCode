@@ -9,29 +9,29 @@ namespace AdventOfCode
         protected enum Result
         {
             none,
-            silver,
-            gold
+            oneStar,
+            twoStars
         }
 
         protected void WriteResult(int day, long? part1, long? part2, Result state)
         {
-            if (state == Result.gold)
+            Console.Write(" {0}) ", day.ToString().PadLeft(2, ' '));
+            if (state == Result.twoStars)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("* ");
+                Console.Write("** ");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            else if (state == Result.silver)
+            else if (state == Result.oneStar)
             {
-                Console.ForegroundColor = ConsoleColor.Gray;
-                Console.Write("* ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("*  ");
                 Console.ForegroundColor = ConsoleColor.White;
             }
             else
             {
-                Console.Write("  ");
+                Console.Write("   ");
             }
-            Console.Write(" {0})", day.ToString().PadLeft(2, ' '));
             if (part1 != null)
             {
                 Console.Write("\t1 = {0}", part1);
@@ -49,23 +49,23 @@ namespace AdventOfCode
 
         protected void WriteResultStringValues(int day, string part1, string part2, Result state)
         {
-            if (state == Result.gold)
+            Console.Write(" {0}) ", day.ToString().PadLeft(2, ' '));
+            if (state == Result.twoStars)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("* ");
+                Console.Write("** ");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            else if (state == Result.silver)
+            else if (state == Result.oneStar)
             {
-                Console.ForegroundColor = ConsoleColor.Gray;
-                Console.Write("* ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("*  ");
                 Console.ForegroundColor = ConsoleColor.White;
             }
             else
             {
-                Console.Write("  ");
+                Console.Write("   ");
             }
-            Console.Write(" {0})", day.ToString().PadLeft(2, ' '));
             if (part1 != null)
             {
                 Console.Write("\t1 = {0}", part1);

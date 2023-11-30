@@ -73,7 +73,7 @@ namespace AdventOfCode._2020
 
                 lines[i] = lines[i].Contains("nop") ? lines[i].Replace("nop", "jmp") : lines[i].Replace("jmp", "nop");
             }
-            WriteResult(8, part1, part2, Result.gold);
+            WriteResult(8, part1, part2, Result.twoStars);
         }
     }
 }

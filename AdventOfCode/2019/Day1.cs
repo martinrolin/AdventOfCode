@@ -22,7 +22,7 @@ namespace AdventOfCode._2019
                 part1 += val;
 
             }
-            WriteResult(1, part1, null, Result.silver);
+            WriteResult(1, part1, null, Result.oneStar);
 
         }
     }

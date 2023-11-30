@@ -36,7 +36,7 @@ namespace AdventOfCode._2020
             }
             part2 = lastSpoken;
 
-            WriteResult(15, part1, part2, Result.gold);
+            WriteResult(15, part1, part2, Result.twoStars);
         }
     }
 }

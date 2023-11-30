@@ -34,7 +34,7 @@ namespace AdventOfCode._2022
             sums.Reverse();
             part2 = sums.Take(3).Sum();
 
-            WriteResult(1, part1, part2, Result.gold);
+            WriteResult(1, part1, part2, Result.twoStars);
 
         }
     }

@@ -28,7 +28,7 @@ namespace AdventOfCode._2020
             part1 = answer.Count();
             part2 = CountContainingBags("shiny gold bag", listOfValues) - 1;
 
-            WriteResult(7, part1, part2, Result.gold);
+            WriteResult(7, part1, part2, Result.twoStars);
         }
 
         int CountContainingBags(string inputBag, List<string> listOfValues)

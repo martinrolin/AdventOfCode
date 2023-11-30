@@ -38,7 +38,7 @@ namespace AdventOfCode._2022
                     part2 += 26;
             }
 
-            WriteResult(3, part1, part2, Result.gold);
+            WriteResult(3, part1, part2, Result.twoStars);
 
         }
     }

@@ -31,7 +31,7 @@ namespace AdventOfCode._2020
 
             part1 = key;
 
-            WriteResult(25, part1, null, Result.gold);
+            WriteResult(25, part1, null, Result.twoStars);
         }
     }
 }

@@ -90,7 +90,7 @@ namespace AdventOfCode._2020
 
             }
             part2 = NumberOfValidPassports;
-            WriteResult(4, part1, part2, Result.gold);
+            WriteResult(4, part1, part2, Result.twoStars);
         }
 
         private bool ValidatePassport(string key, string value)

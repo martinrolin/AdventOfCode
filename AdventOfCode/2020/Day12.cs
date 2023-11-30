@@ -116,7 +116,7 @@ namespace AdventOfCode._2020
             part2 = Math.Abs(x) + Math.Abs(y);
 
 
-            WriteResult(12, part1, part2, Result.gold);
+            WriteResult(12, part1, part2, Result.twoStars);
         }
 
         private void Move(int length) {

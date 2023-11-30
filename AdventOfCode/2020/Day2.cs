@@ -55,7 +55,7 @@ namespace AdventOfCode._2020
                 }
             }
             part2 = correctpassword;
-            WriteResult(2, part1, part2, Result.gold);
+            WriteResult(2, part1, part2, Result.twoStars);
         }
     }
 }

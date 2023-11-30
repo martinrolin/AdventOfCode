@@ -37,7 +37,7 @@ namespace AdventOfCode._2015
                 }
             }
 
-                WriteResult(4, part1 - 1, part2 - 1, Result.gold);
+                WriteResult(4, part1 - 1, part2 - 1, Result.twoStars);
 
         }
 

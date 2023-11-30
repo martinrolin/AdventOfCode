@@ -34,7 +34,7 @@ namespace AdventOfCode._2020
             }
 
             part2 = sum;
-            WriteResult(6, part1, part2, Result.gold);
+            WriteResult(6, part1, part2, Result.twoStars);
         }
     }
 }

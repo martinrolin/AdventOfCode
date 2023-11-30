@@ -135,7 +135,7 @@ namespace AdventOfCode._2021
                 }                
             
             }
-            WriteResult(4, part1, part2, Result.gold);
+            WriteResult(4, part1, part2, Result.twoStars);
         }
     }
 }

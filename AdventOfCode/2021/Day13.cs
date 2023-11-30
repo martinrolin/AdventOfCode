@@ -93,7 +93,7 @@ namespace AdventOfCode._2021
             
 
 
-            WriteResult(13, part1, part2, Result.gold);
+            WriteResult(13, part1, part2, Result.twoStars);
             PrintPaper(paper, xMax, yMax);
         }
     }
