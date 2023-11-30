@@ -15,7 +15,7 @@ namespace AdventOfCode
 
         protected void WriteResult(int day, long? part1, long? part2, Result state)
         {
-            Console.Write(" {0}) ", day.ToString().PadLeft(2, ' '));
+            Console.Write("{0}) ", day.ToString().PadLeft(2, ' '));
             if (state == Result.twoStars)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -49,7 +49,7 @@ namespace AdventOfCode
 
         protected void WriteResultStringValues(int day, string part1, string part2, Result state)
         {
-            Console.Write(" {0}) ", day.ToString().PadLeft(2, ' '));
+            Console.Write("{0}) ", day.ToString().PadLeft(2, ' '));
             if (state == Result.twoStars)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
