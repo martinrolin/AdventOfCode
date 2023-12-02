@@ -224,6 +224,12 @@
     <None Update="Input\2022\day25.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Input\2023\day03.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Input\2023\day02.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Input\2023\day01.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
