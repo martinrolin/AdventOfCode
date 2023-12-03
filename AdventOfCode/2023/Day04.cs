@@ -7,14 +7,17 @@ using System.Text;
 
 namespace AdventOfCode._2023
 {
-    class Day03 : Helper
+    class Day04 : Helper
     {
 
       
         public void Solve()
         {
-
-            string allText = File.ReadAllText("Input\\2023\\day03.txt");
+           
+            
+            long part1 = 0;
+            long part2 = 0;
+            string allText = File.ReadAllText("Input\\2023\\day04.txt");
             var lv = allText.Split("\r\n").ToList();
             List<long> sums = new List<long>();
 
@@ -27,7 +30,7 @@ namespace AdventOfCode._2023
             }
 
 
-            WriteResult(3, 532331, 82301120, Result.twoStars);
+            WriteResult(4, part1, part2, Result.none);
 
         }
     }
