@@ -16,16 +16,8 @@ namespace AdventOfCode._2023
 
             string allText = File.ReadAllText("Input\\2023\\day03.txt");
             var lv = allText.Split("\r\n").ToList();
-            List<long> sums = new List<long>();
-
-
-          
-            for (int i = 0; i < lv.Count; i++)
-            {
-             
-
-            }
-
+            
+            // Lösning i Day03.js
 
             WriteResult(3, 532331, 82301120, Result.twoStars);
 
