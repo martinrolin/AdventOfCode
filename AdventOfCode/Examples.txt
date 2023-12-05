@@ -1,0 +1,19 @@
+﻿Vertikalt och horisontellt runt en koordinat
+--------------------------------------------
+
+var directions = new List<(int r, int c)>();
+
+directions.Add((-1, 0));
+directions.Add((1, 0));
+directions.Add((0, -1));
+directions.Add((0, 1));
+
+
+Läs in inlästa rader i ett Dictionary med integers
+--------------------------------------------------
+
+var m = new Dictionary<(long r, long c),long>();
+
+for (int r = 0; r < lv.Count; r++)
+    for (int c = 0; c < lv[0].Length; c++)
+        m.Add((r, c),lv[r][c] - '0');

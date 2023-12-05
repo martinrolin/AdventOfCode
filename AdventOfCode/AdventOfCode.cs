@@ -21,6 +21,7 @@ namespace AdventOfCode
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(Environment.NewLine + "[2023]");
             Console.ForegroundColor = ConsoleColor.White;
+            new _2023.Day06().Solve();
             new _2023.Day05().Solve();
             new _2023.Day04().Solve(); 
             new _2023.Day03().Solve();
