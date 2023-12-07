@@ -32,7 +32,11 @@ namespace AdventOfCode
             {
                 Console.Write("   ");
             }
-            if (part1 != null)
+            if (part1 != null && part1 == 0)
+            {
+                Console.Write("\t1 = ?");
+            }
+            else if (part1 != null)
             {
                 Console.Write("\t1 = {0}", part1);
             }
@@ -66,7 +70,11 @@ namespace AdventOfCode
             {
                 Console.Write("   ");
             }
-            if (part1 != null)
+            if (part1 != null && part1 == "")
+            {
+                Console.Write("\t1 = ?");
+            }
+            else if (part1 != null)
             {
                 Console.Write("\t1 = {0}", part1);
             }
