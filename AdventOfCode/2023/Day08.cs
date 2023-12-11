@@ -14,12 +14,12 @@ namespace AdventOfCode._2023
 {
     class Day08 : Helper
     {
-        private long gcd(long a, long b)
+        private long GCD(long a, long b)
         {
             if (b == 0)
                 return a;
             else
-                return gcd(b, a % b);
+                return GCD(b, a % b);
         }
 
         public void Solve()
@@ -65,7 +65,7 @@ namespace AdventOfCode._2023
             }
 
             part1 = nn[0];
-            part2 = nn.Aggregate((long)1, (x, y) => x * y / gcd(x, y));
+            part2 = nn.Aggregate((long)1, (x, y) => x * y / GCD(x, y));
 
             WriteResult(8, part1, part2, Result.twoStars);
 
