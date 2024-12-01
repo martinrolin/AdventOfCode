@@ -16,7 +16,15 @@ namespace AdventOfCode
 
             Console.WindowHeight = 40;            
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("[Advent of code]" + Environment.NewLine );            
+            Console.WriteLine("[Advent of code]" + Environment.NewLine );
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(Environment.NewLine + "[2024]");
+            Console.ForegroundColor = ConsoleColor.White;
+            new _2024.Day02().Solve();
+            new _2024.Day01().Solve();
+
+            return;
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(Environment.NewLine + "[2023]");
