@@ -19,21 +19,36 @@ namespace AdventOfCode
             Console.WriteLine("[Advent of code]" + Environment.NewLine );
 
             Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(Environment.NewLine + "[2025]");
+            Console.ForegroundColor = ConsoleColor.White;
+            new _2025.Day06().Solve();
+            new _2025.Day05().Solve();
+            new _2025.Day04().Solve(); 
+            new _2025.Day03().Solve();
+            new _2025.Day02().Solve();
+            new _2025.Day01().Solve();
+
+            
+
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(Environment.NewLine + "[2024]");
             Console.ForegroundColor = ConsoleColor.White;
-            new _2024.Day11().Solve();
+            new _2024.Day25().Solve();
+            new _2024.Day19().Solve();
+            new _2024.Day16().Solve();
+            new _2024.Day15().Solve();
             new _2024.Day10().Solve();
             new _2024.Day09().Solve();
             new _2024.Day08().Solve();
             new _2024.Day07().Solve();
-            new _2024.Day06().Solve();
+            //new _2024.Day06().Solve();
             new _2024.Day05().Solve();
             new _2024.Day04().Solve();
             new _2024.Day03().Solve();
             new _2024.Day02().Solve();
             new _2024.Day01().Solve();
 
-            return;
+            
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(Environment.NewLine + "[2023]");
@@ -63,9 +78,6 @@ namespace AdventOfCode
             new _2023.Day03().Solve();
             new _2023.Day02().Solve();
             new _2023.Day01().Solve();
-
-            Console.ReadLine();
-
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(Environment.NewLine + "[2022]");
